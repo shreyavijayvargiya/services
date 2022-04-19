@@ -3,12 +3,14 @@
             android:id="@+id/aggregate_activity_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
+            android:fillViewport="true"
+            android:background="#F0F5FA">
 
     <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_margin="8dp">
 
         <LinearLayout
                 android:id="@+id/sync_info_pane"
@@ -24,6 +26,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="5dp"
                     android:textSize="20sp"
+                    android:textColor="@color/colorHeadings"
                     android:text="@string/sync_server_url"/>
 
             <TextView
@@ -42,6 +45,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="5dp"
+                    android:textColor="@color/colorHeadings"
                     android:textSize="20sp"
                     android:text="@string/username"/>
 
@@ -59,12 +63,17 @@
 
         <Button
                 android:id="@+id/change_user_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginEnd="20dp"
+                android:background="@drawable/button_gradient"
                 android:text="@string/change_user"/>
 
         <Space
@@ -74,15 +83,19 @@
         <Spinner
                 android:id="@+id/sync_instance_attachments"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
+                android:layout_height="32dp"
+
                 android:layout_marginTop="10dp"
         />
 
         <Button
                 android:id="@+id/sync_start_button"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="200dp"
+                android:layout_height="54dp"
+                android:background="@drawable/button_gradient"
+                android:textSize="18sp"
+                android:textColor="@color/white"
                 android:layout_marginLeft="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginRight="20dp"
@@ -97,6 +110,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
+            android:textColor="@color/colorHeadings"
             android:textSize="20sp"
             android:text="@string/last_sync"/>
 
@@ -158,6 +172,9 @@
                     android:id="@+id/sync_reset_server_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/button_gradient"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
                     android:text="@string/sync_reset_server"/>
         </LinearLayout>
     </LinearLayout>
